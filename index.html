@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+
+</head>
+<body>
+    <form>
+        <label for="ipt-nome">Nome:</label>
+        <input 
+            type="text" 
+            name="nome" 
+            id="ipt-nome" 
+            placeholder="Ex: Jorge"
+        />
+        <br>
+        <br>
+        <label for="ipt-email">Email:*</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="ipt-email" 
+            placeholder="Ex: AAAA@gmail.com"
+            required
+        />
+        <br>
+        <br>
+        <label for="ipt-senha">Senha:</label>
+        <input 
+            type="password" 
+            name="senha" 
+            id="ipt-senha"
+            placeholder="Ex: 1234"
+            minlength="4"
+            maxlength="4"
+        />
+        <br>
+        <br>
+        <label for="ipt-idade">Idade:</label>
+        <input 
+            type="number" 
+            name="idade" 
+            id="ipt-idade"
+            min="0"
+            max="130"
+            step="0.5" 
+        />
+        <br>
+        <fieldset>
+            <legend>Hobbies:</legend>
+            <label>
+                <input type="checkbox" name="hobbie" value="jogar">
+                Jogar
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbie" value="estudar">
+                Estudar
+             </label>
+
+            <label>
+                <input type="checkbox" name="hobbie" value="trabalhar">
+                Trabalhar
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label>
+                <input type="radio" name="sexo" value="masculino">
+                Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="sexo" value="feminino">
+                Feminino
+             </label>
+
+            <label>
+                <input type="radio" name="sexo" value="outro">
+                Outro
+            </label>
+        </fieldset>
+        <br>
+        <select name="cidade" id="slt-cidade">
+            <option value="fortaleza">Fortaleza</option>
+            <option value="baturite">Baturité</option>
+            <option value="aquiraz">Aquiraz</option>
+        </select>
+        <br>
+
+        <textarea name="mensage" id="ta-mensage" placeholder="Sua mensagem..."></textarea>
+
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    
+</body>
+</html>
